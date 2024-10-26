@@ -1,6 +1,7 @@
 # Environment files
 .env
 chromosome1.fa
+chromosome1.fa.gz
 
 # Python cache and compiled files
 __pycache__/
