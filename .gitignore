@@ -1,0 +1,46 @@
+# Environment files
+.env
+chromosome1.fa
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# macOS files
+.DS_Store
+
+# Virtual environment
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Test and coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Miscellaneous
+*.swp
+*.swo
+*.bak
+Thumbs.db
