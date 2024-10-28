@@ -73,13 +73,13 @@ The project generates several metrics to visualize the performance of Gemini. Th
 
 ### Mean Similarity, Coverage, and Aggregate Scores by Content Policy Name
 
-![Mean Scores](img/to/barGraph.png)
+![Mean Scores](img/barGraph.png)
 
 This bar graph shows the mean similarity, mean coverage, and mean aggregate scores for various content policies, helping to visualize Gemini's performance across different types of prompts.
 
 ### Frequency Distribution of Aggregate Scores for Economic Harm
 
-![Frequency Distribution](img/to/FrequenceDistr.png)
+![Frequency Distribution](img/FrequenceDistr.png)
 
 This histogram depicts the frequency distribution of aggregate scores specifically for the "Economic Harm" content policy, providing insights into how often certain score ranges are generated in responses.
 
@@ -87,6 +87,76 @@ This histogram depicts the frequency distribution of aggregate scores specifical
 ## Conclusion
 
 The **Gemini Stress Test** project serves as a crucial investigation into the reliability and safety of generative AI models when faced with sensitive prompts. By systematically evaluating coherence and coverage, this project aims to contribute to the understanding and improvement of AI model behavior in real-world applications.
+
+
+## Installation Guide
+
+To set up the **Gemini Stress Test** project on your local machine, follow these steps:
+
+### Prerequisites
+
+- Python 3.7 or higher
+- Pip (Python package installer)
+
+### Step 1: Clone the Repository
+
+First, clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/BreaGG/Gemini_Stress_Test.git
+cd Gemini_Stress_Test
+```
+
+### Step 2: Create a Virtual Environment (Optional)
+
+It is recommended to create a virtual environment to manage your project dependencies:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+### Step 3: Install Required Packages
+
+Install the necessary Python packages by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don’t have a `requirements.txt` file, you can manually install the required libraries with the following commands:
+
+```bash
+pip install google-generativeai
+pip install pandas
+pip install scikit-learn
+pip install spacy
+pip install numpy
+pip install python-dotenv
+pip install torch
+pip install transformers
+```
+
+### Step 4: Set Up Environment Variables
+
+If your project uses any environment variables (e.g., API keys), create a `.env` file in the root directory of the project and add your variables in the following format:
+
+```
+API_KEY=your_api_key_here
+```
+
+### Step 5: Run the Notebook
+
+You can now open the Jupyter Notebook to start testing Gemini:
+
+```bash
+jupyter notebook Gemini_Stress_Test.ipynb
+```
+
+### Step 6: Execute the Tests
+
+Follow the instructions in the notebook to execute the test functions and analyze the results.
+
 
 ## License
 
