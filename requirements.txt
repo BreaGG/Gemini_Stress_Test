@@ -1,0 +1,8 @@
+google-generativeai
+pandas
+scikit-learn
+spacy
+numpy
+python-dotenv
+torch
+transformers
